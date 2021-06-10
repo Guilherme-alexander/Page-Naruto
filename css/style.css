@@ -1,0 +1,391 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif, serif;
+}
+
+
+.container { 
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear {clear: both;}
+
+header {
+    padding: 8px 0;
+    height: 75px;
+    background: #000000;        
+}
+
+.logo {
+    float: left;    
+}
+
+.logo img {
+    position: relative;
+    top: 5px;
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+      
+}
+
+
+
+nav.menu-desktop li.selected { font-weight: bold;}
+
+nav.menu-desktop {
+    float: right;    
+}
+
+nav.menu-desktop ul {
+    position: relative;
+    top: 20px;
+}
+
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+nav.menu-desktop a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff8100;
+    padding:9px 14px;
+    border-radius:8px;
+}
+
+/* SECTION MAIN */
+section.main-bg {
+    position: relative;
+    width: 100%;   
+    height: auto; 
+    padding: 100px 0 200px 0;    
+    background-image: url("../img/naruto-shippuden-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    text-align: center;
+}
+
+section.main-bg > .container {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+}
+
+section.main-bg h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: normal;
+    font-size: 45px;
+}
+
+section.main-bg p {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+section.diferenciais {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.line-text { 
+    color: #7E3840;
+    display: inline-block;
+    position: relative;    
+}
+
+.line-text > div {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 100px;
+    height: 3px;
+    background: #7E3840;
+}
+
+.line-text h2 {
+    font-weight: normal;
+    font-size: 27px;
+}
+
+.images-diferenciais {
+    margin-top: 35px;
+}
+
+.box-image-single {
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+}
+
+.box-image-single h2 {
+    color: rosybrown;
+    font-size: 40px;
+}
+
+.box-image-single p {
+    color: rosybrown;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.box-image-single img {
+    width: 100px;
+    height: 100px;
+    transition: all 1s;
+}
+
+.box-image-single img:hover {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+}
+
+section.about-perfil {
+    border-top: 1px solid rgb(210, 210, 210);
+    padding: 30px 0;
+    background: rgb(225, 225, 225);
+}
+
+section.about-perfil > .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfil-container {
+    width: 50%;
+}
+
+.about-container {    
+    width: 50%;
+}
+
+.about-div {
+    padding: 10px;
+}
+
+.about-container p {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;    
+}
+
+.line-text-mg-bt {
+    margin-bottom: 10px;
+}
+
+.img-avatar {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;    
+}   
+
+#zetsu {
+    background-image: url('../img/zetsu.jpg');
+}
+
+#obito {
+    background-image: url('../img/obito.jpg');
+}
+
+.avatar-box {
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.description-avatar {
+    display: inline-block;
+    width: calc(100% - 70px);
+    padding: 0 10px;
+    position: relative;
+    bottom: 15px;
+    
+}
+
+.description-avatar h3 {
+    color: rgb(30, 30 , 30);
+    font-weight: normal;
+    font-style: italic;
+}
+
+.description-avatar p {
+    color: rgb(30, 30 , 30);
+    font-weight: lighter;
+}
+
+button.btn-about {
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background: #7E3840;
+    color: #fff;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+button.btn-about:hover {
+    background: transparent;    
+    border: 1px solid #7E3840;
+    color: #7E3840;
+}
+
+section.cards {
+    padding: 20px 60px;        
+}
+
+section.cards > .container {
+    text-align: center;    
+}
+
+.card-single {
+    width: 33.3%;
+    float: left;
+    padding: 10px;       
+}
+
+.card-single img {
+    width: 150px;
+    height: 270px;
+    
+}
+
+.h3-sublime {
+    border-bottom: 1px solid #7E3840;
+}
+
+.card-single h3 {
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p {
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #7E3840;
+}
+
+.principal-enemy {
+    background: rgba(202, 201, 201, 0.5);
+    border-top: 2px solid rgb(210, 210, 210);
+    padding: 20px 0;           
+}
+
+.container-principal-enemy{
+    padding: 10px 50px 50px 50px;
+}
+
+.container-title-enemy {
+    text-align: center;
+    padding: 15px;
+}
+
+.principal-enemy p {
+    font-size: 16px;
+    
+}
+
+
+.img-enemy {
+    position: relative; 
+    width: 50%;     
+    margin-top: 10px;
+}
+
+.img-enemy img {    
+    max-width: 100%;  
+    width: 550px;  
+    float: left;    
+    -webkit-box-shadow: 0px 4px 6px 0px rgba(50, 50, 50, 0.86);
+    -moz-box-shadow:    0px 4px 6px 0px rgba(50, 50, 50, 0.86);
+    box-shadow:         0px 4px 6px 0px rgba(50, 50, 50, 0.86);
+    
+    
+}
+.about-enemy {    
+    color: rgb(78, 75, 75);
+    width: 50%; 
+    float: right;    
+}
+
+.footer {
+    padding-bottom: 15px 0;
+    background: #7E3840;
+    text-align: center;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    section.main-bg {
+        padding-top: 20px;
+        height: auto;
+    }
+    
+    .box-image-single {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .perfil-container {
+        width: 100%;
+    }
+    
+    .about-container {
+        width: 100%;
+        margin-top: 60px;
+    }
+    
+    .card-single {
+        width: 100%;
+    }
+    
+    .card-single img {
+        height: 250px;
+    }
+    
+    .container-title-enemy {
+        padding: 0px;
+    }
+    
+    .img-enemy {
+        width: 100%;
+        padding: 20px;        
+    }
+    
+    .img-enemy img {
+        width: 100%;
+    }
+    
+    .about-enemy {    
+        margin-top: 20px;
+        width: 100%;
+    }
+}
