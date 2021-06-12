@@ -3,233 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="web,site,palavras-chaves">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- style css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <title>Web Site Naruto</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!-- icon bootstrapcdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,700;1,300&display=swap"
+    rel="stylesheet">
+    <title>Web Project Express</title>
 </head>
 <body>
-    
     <header>
         <div class="container">
-            
-            <div class="logo">
-                <a href="#"><img src="img/Naruto-logo-shippuuden.png" alt=""></a>
-            </div>
-            
+            <a href="index.html"><div class="logo"><img src="img/Naruto-logo-shippuuden.png" alt=""></div></a>
             <nav class="menu-desktop">
                 <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">Hístoria</a>
-                    </li>
-                    <li>
-                        <a href="naruto.html">Personagens</a>
-                    </li>
-                    <li>
-                        <a href="#">Jutsus</a>
-                    </li>
+                    <li id="selec"><a href="#">Home</a></li>
+                    <li><a href="personagens.html">Personagens</a></li>
+                    <li><a href="contato.html">jutsus</a></li>
                 </ul>
             </nav>
-        </div>
+            <nav class="menu-mobile">
+                <h2><i class="fa fa-bars" aria-hidden="true"></i></h2>
+                <ul>
+                    <li id="selec"><a href="#">Menu</a></li>
+                    <li><a href="personagens.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div><!-- clear -->
+        </div><!-- container -->
     </header>
-    
     <section class="main-bg">
-        <div class="overlay"></div>
-        
+        <div class="overlay"></div><!-- overlay -->
         <div class="container">
             <h2>Naruto</h2>
-            
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam illum obcaecati, saepe quo fugiat 
-                reprehenderit, tempore repellat laudantium nobis sequi aspernatur tenetur dolorem cum, deserunt quos 
-                consectetur? Hic atque dicta ab natus dolorem, fuga optio, quaerat reiciendis aliquam maxime modi, id
-                a assumenda corporis cum quos magnam tempora aliquid itaque magni perspiciatis enim similique repellendus
-                deserunt. Qui ullam tempore consequatur cumque aspernatur totam inventore quod maiores cum vel eligendi 
-                provident, aliquam, aperiam consectetur autem dignissimos accusantium distinctio laborum blanditiis 
-                facere. Officiis ea numquam, vitae dignissimos beatae error autem laudantium debitis iusto, totam.
-            </p>         
-            
-        </div>
-        
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus urna et purus pretium tempus. Vestibulum tempor, urna et molestie sollicitudin, ex metus lacinia nisi, tempus ullamcorper massa tellus a lectus. Morbi faucibus, leo nec porta accumsan, purus lectus elementum tellus, sed ultricies sem ipsum non sapien. Nunc sollicitudin bibendum turpis, ut mattis elit </p>
+
+            <p>tincidunt non. Quisque imperdiet a tellus vel fermentum. Nulla vel fringilla purus, vulputate vehicula sapien. Suspendisse potenti. Nam eu nisl tincidunt, egestas dolor ut, finibus massa. Praesent vulputate velit lacus, ac sodales leo lobortis sit amet. Morbi euismod, nisi eget pellentesque rhoncus, leo risus varius erat, ac maximus augue est eu enim. Proin at dapibus ligula.</p>
+        </div><!-- container -->
     </section>
-    
-    <section class="diferenciais">
+
+    <section class="anime">
         <div class="container">
             <div class="line-text">
-                <div style="width: 195px;"></div>
-                <h2>Transformações</h2>
+                <div style="width:175px;"></div>
+                <h2>Animes</h2>
             </div>
-            
-            <div class="images-diferenciais">
-                <div class="box-image-single">
-                    <img src="img/sharingan1.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Vitae, molestias!
-                    </p>
-                </div>
-                
-                <div class="box-image-single">
-                    <img src="img/sharingan2.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Vitae, molestias!
-                    </p>
-                </div>
-                
-                <div class="box-image-single">
-                    <img src="img/sharingan3.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Vitae, molestias!
-                    </p>
-                </div>
-                
-                <div class="clear"></div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="about-perfil">
-        <div class="container">
-            <div class="perfil-container">
-                <div class="line-text">
-                    <div style="width: 70px;"></div>
-                    <h2>Parceiros</h2>                    
-                </div>
-                
-                <div class="avatar-box">
-                    <div id="zetsu" class="img-avatar"></div><div class="description-avatar">
-                        <h3>Zetsu</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>                    
-                    
-                </div>
-                
-                <div class="avatar-box">
-                    <div id="obito" class="img-avatar"></div><div class="description-avatar">
-                        <h3>Obito</h3>
-                        <p>Lorem ipsum dolor sit amet.</p>
-                    </div>                    
-                </div>
-                
-                <button class="btn btn-about">Ver outros</button>
-            </div>
-            
-            <div class="about-container">
-                <div class="about-div">
-                    <div class="line-text line-text-mg-bt">
-                        <div style="width: 70px;"></div>
-                        
-                        <h2>Principais jutsus</h2>
-                        
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repudiandae quam ex non placeat sunt beatae 
-                            neque, eos temporibus, error porro nulla vel quia quisquam 
-                            perspiciatis repellendus cum cupiditate ipsa culpa.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="about-div">
-                    <div class="line-text">
-                        <div style="width: 70px;"></div>
-                        
-                        <h2>Elementos da natureza</h2>
-                        
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Repudiandae quam ex non placeat sunt beatae 
-                            neque, eos temporibus.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="cards">
-        
-        <div class="container">
-            <div class="line-text title-card">
-                <div style="width: 90px;"></div>
-                <h2>Outros membros do clã</h2>
-            </div>
-        </div>
-        
-        <div class="container">
-            
-            <div class="card-single">
-                <img src="img/sasuke.jpg" alt="">
-                <h3><span class="h3-sublime">Uchiha</span> Sasuke</h3>
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            
-            <div class="card-single">
-                <img src="img/itachi.jpg" alt="">
-                <h3><span class="h3-sublime">Uchiha</span> Itachi</h3>
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            
-            <div class="card-single">
-                <img src="img/shisui.jpg" alt="">
-                <h3><span class="h3-sublime">Uchiha</span> Shisui</h3>
-                <p>Lorem ipsum dolor sit.</p>
-            </div>
-            <div class="clear"></div>
-            
-        </div>
-        
-    </section>
-    
-    <section class="principal-enemy">
-        <div class="container container-title-enemy">
-            <div class="line-text title-card">
-                <div></div>
-                <h2>Principal adversário</h2>
-            </div>
-        </div>
-        
-        <div class="container container-principal-enemy">
-            <div class="img-enemy">
-                <img src="img/hashirama.png" alt="">
-            </div>
-            
-            <div class="about-enemy">
-                <h3>Senju Hashirama</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Laboriosam autem enim corporis iure, deleniti, explicabo, 
-                    praesentium eligendi facere eius molestias pariatur porro
-                    itaque dolorum dolores voluptatibus ex nam a aut rem 
-                    soluta! Tenetur dolor quidem in eum? Exercitationem, 
-                    excepturi accusantium.
-                </p>
-                
-                <p>
-                    Deligendi facere eius molestias pariatur porro
-                    itaque dolorum dolores voluptatibus ex nam a aut rem 
-                    soluta! Tenetur dolor quidem in eum? Exercitationem, 
-                    excepturi accusantium.
-                </p>
                 
                 
-            </div>
-            <div class="clear"></div>
-        </div>
-    </section>
-    
-    <footer class="footer">
-        <div class="container">
-            <p>Todos os direitos reservados &copy; Guilherme Alexander Developer - 2020</p>
-        </div>
-    </footer>
-    
-    <script src="source/js/scripts.js"></script>
+            <div class="icones-diferenciais">
+                <div class="box-icone-single">
+                    <img src="img/naruto-classico.png">
+                    <h3>Naruto Clasico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- box-icone-single -->
 
+                <div class="box-icone-single">
+                    <img src="img/Naruto-logo-shippuuden.png">
+                    <h3>Naruto Shippuuden</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- box-icone-single -->
+
+                <div class="box-icone-single">
+                    <img src="img/boruto.png">
+                    <h3>Boruto</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div><!-- box-icone-single -->
+
+                <div class="clear"></div><!-- clear -->
+            </div><!-- icones-diferenciais -->
+
+        </div><!-- container -->
+    </section>
+
+    <section class="sobre">
+        <div class="container">
+
+            <div class="sobre-container">
+                <div class="line-text">
+                    <div style="width:65px;"></div>
+                        <h2>Sobre</h2>
+                        <p>
+                            História de Naruto refere-se à cronologia de eventos que transcorrem no mundo ficcional onde se situa Naruto, uma série de mangá criada por Masashi Kishimoto e serializada na revista semanal Weekly Shōnen Jump desde 2015. A série se passa em um mundo em que ninjas podem usar o chakra para criar jutsus e realizar feitos super humanos aumentando suas habilidades físicas com taijutsu, usando ninjutsu para controlar os cinco elementos ou Genjutsu para criar ilusões na mente de seu adversário. Esses ninjas se organizam e fundam Vilas Ocultas que recebem pedidos de missões de outros habitantes, as cinco maiores e mais importantes dessas vilas possuem um Kage como líder, que é o ninja mais forte e mais qualificado para o comando geral. Originalmente, os jutsus deveriam ser usados para pacificar o mundo, que era dominado pelo caos e o ódio, mas alguns ninjas passaram a criar e aprender jutsus para benefício próprio e até mesmo para fazer o mal,causando um desequilíbrio no mundo ninja. A ambição e a busca pelo poder absoluto faz com que às vezes algumas vilas se desentendam e provoquem uma guerra entre si, e alguns ninjas que desrespeitam as leis são expulsos e se tornam criminosos foragidos. Existem também os chamados Bijū, criaturas com um imenso poder que para não causar a destruição, são seladas dentro de crianças recém-nascidas denominadas jinchuurikis, os jinchuurikis que aprendem a controlar o poder de seu bijuu tornam-se extremamente poderosos e perigosos, até para si mesmos.
+                        </p>
+                </div> <!-- line-text -->
+            </div><!-- sobre-container -->
+
+        </div><!-- container -->
+    </section>
+
+    <section class="cards">
+        <div class="container">
+            <div class="card-single">
+                <img src="img/card-naruto-classico.jpg" alt="imagem" title="link">
+                <h3>Naruto</h3>
+                <p>tincidunt non. Quisque imperdiet a tellus vel fermasdasentum.</p>
+            </div><!-- card-single -->
+
+            <div class="card-single">
+                <img src="img/card-naruto-shippuden.jpg" alt="imagem" title="link">
+                <h3>Naruto Shippuden</h3>
+                <p>tincidunt non. Quisque imperdiet a tellus vel fermasdasentum.</p>
+            </div><!-- card-single -->
+
+            <div class="card-single">
+                <img src="img/Boruto.jpg" alt="imagem" title="link">
+                <h3>Boruto</h3>
+                <p>tincidunt non. Quisque imperdiet a tellus vel fermasdasentum.</p>
+            </div><!-- card-single -->
+            <div class="clear"></div><!-- clear -->
+        </div><!-- container -->
+    </section>
+
+    <footer class="footer2"><p>Todos os Direitos Reservados &copy; Guilherme Alexander - 2020</p></footer>
+
+
+    <script src="js/Jquery.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
 </body>
 </html>
