@@ -122,7 +122,8 @@ nav.menu-desktop a{
 
 nav.menu-desktop li#selec a{
     font-weight:bold;
-    color:orangered;
+    color:#fff;
+    background-color: orangered;
 }
 
 nav.menu-desktop li#selec a:hover{
@@ -342,8 +343,8 @@ section.cards{
 
 .card-single img{
     width:100%;
-    min-height:280px;
-    object-fit: cover;
+    height:280px;
+    object-fit: contain;
 }
 
 .card-single h3{
