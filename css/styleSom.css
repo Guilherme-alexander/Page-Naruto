@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif, serif;
+}
+
+body{
+    background-color:#000;
+    user-select: none;
+}
+
+.music{
+    margin-top:150px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: bold;
+    font-size:2em;
+    color:orangered;
+    display:inline-flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.player{
+    position:relative;
+    width:500px;
+    background-color: #f9f9f9;
+    min-height:100px;
+    padding:10px 30px;
+    border:2px solid #f9f9f9;
+    border-radius: 80px;
+}
+
+.btns{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+}
+
+.btns span{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background-color:#fff;
+    color:#777;
+    cursor:pointer;
+    box-shadow: inset 0 -5px 5px rgba(0,0,0,0.1),
+                    0 5px 10px rgba(0,0,0,0.1),
+                    0 10px 15px rgba(0,0,0,0.1);
+}
+
+.btns span:active,
+.btns span.active{
+    color:orangered;
+    box-shadow: inset 0 -7px 5px rgba(0,0,0,0.25),
+                inset 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.btns span.PlayPause{
+    width:100px;
+    height:100px;
+}
+
+.btns span ion-icon{
+    font-size:2em;
+}
+
+.btns span.PlayPause ion-icon{
+    font-size:3em;
+}
+
+
+
+section.video{
+    margin-top:30px;
+}
+
+.container{
+    max-width:1280px;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+section.video > .container{
+    width:100%;
+    margin:0 auto;
+    padding:0 2%;
+}
+
+iframe{
+    width:100%;
+    max-height:auto;
+    margin:30px 0;
+}
+
+.logo-music{
+    text-align: center;
+    margin-top:30px;
+}
+
+@media screen and (max-width:768px){
+
+    iframe{
+        width:100%;
+        height:400px;
+    }
+}
