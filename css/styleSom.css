@@ -119,3 +119,15 @@ iframe{
         height:400px;
     }
 }
+
+@media screen and (max-width:568px){
+    .player{
+        position:relative;
+        width:420px;
+        background-color: #f9f9f9;
+        min-height:100px;
+        padding:10px 30px;
+        border:2px solid #f9f9f9;
+        border-radius: 80px;
+    }
+}
