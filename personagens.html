@@ -13,7 +13,7 @@
     rel="stylesheet">
     <title>naruto Page</title>
 </head>
-<body>
+<body style="background-color:#000;">
 
     <header>
         <div class="container">
@@ -36,17 +36,15 @@
             <div class="clear"></div><!-- clear -->
         </div><!-- container -->
     </header>
-
-    <h1>personagens</h1>
-
+    <div class="h1-box-personagem">
+        <h1>personagens</h1>
+    </div>
     <section class="card-personagem">
         <div class="container">
 
-            <a href="akatsuk.html">
-            <div class="box-personagem psn1">
-                <img src="img/Akatsuki.png" alt="personagens Akatsuki">
+            <div class="box-personagem psn1">          
+                    <img src="img/Akatsuki.png" alt="personagens Akatsuki">
             </div><!-- box-personagem -->
-            </a>
 
             <div class="box-personagem psn2">
                 <img src="img/uchiha.png" alt="personagens uchiha">
@@ -65,6 +63,11 @@
         $('nav.menu-mobile h2').click(function(){
             $('nav.menu-mobile ul').slideToggle();
         });
+
+        $('.psn1').click(function(){
+            location.href = 'akatsuk.html'
+        });
+        
     </script>
 </body>
 </html>

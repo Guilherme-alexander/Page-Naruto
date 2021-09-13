@@ -6,6 +6,10 @@
     font-family: 'Nunito', sans-serif, serif;
 }
 
+html,body{
+    height:100%;
+}
+
 /* Class Auxiliares */
 .container{
     max-width:1280px;
@@ -641,9 +645,14 @@ h1{
     margin:40px 0;
 }
 
-.card-personagem{
-    background-color:#000;
-    height:800px;
+/* .card-personagem{
+   
+} */
+.h1-box-personagem > h1{
+    width:100%;
+    height:90px;
+    margin:0;
+    background-color:#FFF;
 }
 
 .card-personagem > .container{
@@ -837,6 +846,10 @@ h1{
         width:100%;
         padding:0 10px;
         margin-bottom:20px;
+    }
+
+    .card-personagem{
+        height:85vh;
     }
 
     .card-text {width:100%;}
